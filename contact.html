@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Olasco System Konsult</title>
+  <link rel="stylesheet" href="olsasco.css">
+  <link rel="stylesheet" href="O.CSS">
+</head>
+<body>
+<!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">➰Olasco Systems Konsult➰</h1>
+      <nav>
+        <ul>
+          <br>
+          <br>
+          <li><a href="O.HTML">Home</a></li>
+          <br>
+          <br>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Sales</h1>
+    <p class="lead">Tell us what you need — we'll prepare a reply for you</p>
+
+    <form id="contactForm" class="contact-form">
+      <label>
+        Company name
+        <input name="company" required>
+      </label>
+      <label>
+        Your name
+        <input name="name" required>
+      </label>
+      <label>
+        Email
+        <input name="email" type="email" required>
+      </label>
+      <label>
+        Phone
+        <input name="phone" type="tel">
+      </label>
+      <label>
+        Product name/ specifications
+        <input name="Product name/specifications" type="text">
+        Message / Requirements
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button  class="btn btn-outline" type="button" id="emailSend" >emailSend</button>
+      <button onclick="sendEmail()">Email Me</button>
+
+        
+      </div>
+
+      <p id="contactStatus" class="muted"></p>
+    </form>
+
+    <section class="office">
+      <h3>Office</h3>
+      <p>_______________@gmail.com</p>
+      <p>Phone: +234 ______________</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>➰Olasco System Konsult➰</title>
+  <link rel="stylesheet" href="O.CSS">
+  <link rel="stylesheet" href="olsasco.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">➰Olasco System's Konsult➰</h1>
+      <nav>
+        <ul>
+          <li><a href="O.HTML">Home</a></li>
+          <br>
+          <br>
+          <br>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <style>
+  body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 40px;
+    }
+
+    .comment-container {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+        position: relative;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #0078ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #005fcc;
+    }
+
+    .comment {
+        background: #fafafa;
+        border-left: 4px solid #0078ff;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 4px;
+    }
+
+    .comment strong {
+        color: #0078ff;
+    }
+</style>
+</head>
+<body>
+ <!-- Featured Products -->
+  <section class="products">
+    <div class="container">
+      <h1>About us</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="o.jpg" alt="Section 1">
+          <p>Null</p>
+        </div>
+        <div class="product-card">
+          <img src="" alt="Section 2">
+          <p>Null</p>
+        </div>
+            </div>
+          </div>
+      </section>
+<div class="comment-container">
+    <h2>Leave a Comment</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <textarea id="comment" rows="4" placeholder="Write your comment..."></textarea>
+    <button onclick="addComment()">Submit Comment</button>
+
+    <h3 style="margin-top: 30px;">Customer Comments:</h3>
+    <div id="commentSection"></div>
+</div>
+
+<script>
+function addComment() {
+    const name = document.getElementById("name").value.trim();
+    const comment = document.getElementById("comment").value.trim();
+    const section = document.getElementById("commentSection");
+
+    if (name === "" || comment === "") {
+        alert("Please fill out both fields.");
+        return;
+    }
+
+    // Create a comment block
+    const div = document.createElement("div");
+    div.className = "comment";
+    div.innerHTML = `<strong>${name}</strong><br>${comment}`;
+
+    // Add comment to section
+    section.prepend(div);
+
+    // Clear fields
+    document.getElementById("name").value = "";
+    document.getElementById("comment").value = "";
+}
+</script>
+<section class="info-cards">
+                    <div class="info">
+                        <h3>Business services</h3>
+                        <p>Bulk pricing, warranty options, and dedicated account managers for corporate customers.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Fast delivery</h3>
+                        <p>Regional shipping and pickup availalble - ask for lead times.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Support</h3>
+                        <p>Onsite or Remote technical support plans availalble - contact us for details</p>
+                    </div>
+                </section>
+
+</body>
+</html>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><h3>&copy; 2025➰Olasco System Konsult➰ <br><br>All rights reserved.</h3></p><br>
+      <div class="social">
+        <a href="#">FACEBOOK</a> |
+        <a href="#">TIKTOK</a> |
+        <a href="#">INSTAGRAM</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
